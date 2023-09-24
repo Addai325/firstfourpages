@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile Page</title>
+    <style>
+        .profile-head-page {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background-color: #e6f9ff;
+  justify-content: space-between;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  align-items: center;
+}
+
+.medic-old-logo {
+  height: 50px;
+  margin-left: 60px;
+  vertical-align: middle;
+}
+
+.medic-logo-container {
+  height: 40px;
+  vertical-align: middle;
+  
+}
+
+.remaining-header {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #008080;
+}
+
+.remaining-header:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.remaining-header:active {
+  opacity: 0.5;
+}
+
+.last-header {
+  margin-right: 60px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #008080;
+}
+
+.last-header:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.last-header:active {
+  opacity: 0.5;
+}
+
+.profile-on-page {
+  margin-top: 120px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  background-color: #e6f9ff;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+.profile-pic {
+  height: 120px;
+  border-radius: 60px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.about-name {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 70px;
+  margin-bottom: 0;
+
+}
+
+.about-info-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.about-email {
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 75px;
+margin-bottom: 0;
+}
+
+.about-info-email {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 6px;
+  margin-top: 0;
+}
+
+.about-age {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 80px;
+  margin-bottom: 0;
+}
+
+.about-info-age {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 82px;
+  margin-top: 0;
+}
+
+.about-telephone {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 65px;
+  margin-bottom: 0;
+}
+
+.about-info-telephone {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 36px;
+  margin-top: 0;
+}
+
+.about-emergency-contact {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 35px;
+  margin-bottom: 0;
+}
+
+.about-info-man {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about-info-emergency-contact {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 39px;
+  margin-top: 0;
+}
+
+.edit-button {
+  border: none;
+  padding-left: 105px;
+  padding-right: 105px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: rgb(7, 7, 77);
+  color: white;
+  border-radius: 18px;
+}
+
+.edit-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.edit-button:active {
+  opacity: 0.7;
+}
+
+.settings {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 90px;
+  color: #008080;
+}
+
+.settings:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.settings:active {
+  opacity: 0.5;
+}
+
+.logout {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 93px;
+  color: #008080;
+  margin-bottom: 15px;
+}
+
+.logout:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.logout:active {
+  opacity: 0.5;
+}
+
+
+.second-page-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emergency-call-button {
+  background-color: rgb(7, 7, 77);
+  height: 80px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 250px;
+}
+
+.emergency-call-button-text {
+  display: inline-block;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.telephone {
+  height: 50px;
+  border-radius: 35px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.emergency-call-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.emergency-call-button:active {
+  opacity: 0.5;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="profile-head-page">
+      <div class="medic-logo-container">
+        <img class="medic-old-logo" src="profile photos/medic-old logo.jpg" >
+      </div>
+      <div class="remaining-header">&plus;Reminder</div>
+      <div class="remaining-header">Health Information</div>
+      <div class="remaining-header">Activity Tracking</div>
+      <div class="remaining-header">Appointment</div>
+      <div class="last-header">About</div>
+    </div>
+    <div class="profile-on-page">
+      <div class="first-page-column">
+        <div><img class="profile-pic" src="profile photos/profile pic.jpg" title="profile photo"></div>
+        <p>
+          <p class="about-name">Name</p>
+          <p class="about-info-name">Mr James Medicold</p>
+        </p>
+        <p>
+          <p class="about-email">Email</p>
+          <p class="about-info-email">James&commat;medicold.com</p>
+        </p>
+        <p>
+          <p class="about-age">Age</p>
+          <p class="about-info-age">63</p>
+        </p>
+        <p>
+          <p class="about-telephone">Telephone</p>
+          <p class="about-info-telephone">081-6343-8383</p>
+        </p>
+        <p>
+          <p class="about-emergency-contact">Emergency contact</p>
+          <p class="about-info-man">Kelvin Medicold</p>
+          <p class="about-info-emergency-contact">081-6343-8383</p>
+        </p>
+        <button class="edit-button">Edit</button>
+        <div class="settings">Settings</div>
+        <div class="logout">Logout</div>
+      </div>
+      <div class="second-page-column">
+        <button class="emergency-call-button">
+          <img class="telephone" src="profile photos/telephon pic.jfif"><p class="emergency-call-button-text">Click to call emergency contact</p>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
